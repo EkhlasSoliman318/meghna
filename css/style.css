@@ -1,0 +1,408 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+header{
+    background-image:url(../images/slider/hero-area.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+@media only screen and (max-width: 1024px) {
+    header{
+        height: 50vh;
+    }
+}
+header .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+header .contant {
+    margin: auto;
+    margin-top: 20rem;
+}
+header .contant i{
+    font-size: 20px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    padding-top: 13px;
+    padding-left: 5px;
+    text-align: center;
+    color: #57cbcc;
+    background-color: #fff;
+}
+header .contant h2{
+    color: #fff;
+    font-size: 90px;
+    font-weight: 700;
+    margin-left: 5rem;
+}
+header .contant p{
+    color: #fff;
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+header .contant .btn{
+    border: 2px solid #fff;
+    padding: 14px 50px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+}
+header .contant .btn:hover{
+    background-color:#57cbcc;
+    border: 2px solid transparent;
+}
+.header_nav .navbar-default{
+    background-color: #333;
+    z-index: 9999
+}
+.navbar-default .nav li.active{
+    color:#57cbcc;
+    background-color: transparent;
+}
+.navbar-default .nav li.active a{
+    color:#57cbcc;
+    background-color: transparent;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+/*******************************************************/
+.about{
+    background-color: #353b43;
+        
+}
+.about .head h2{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+}
+.about .head  h2 span {
+    color: #57cbcc;
+}
+.about .head .border {
+    border-top: 2px solid rgba(236, 239, 241, 0.07);
+    height: 1px;
+    margin: 15px auto 0;
+    position: relative;
+    width: 30%;
+}
+.about .head .border:before {
+    content: '';
+    height: 6px;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    top: -4px;
+    width: 50px;
+    background-color: #57cbcc;
+}
+.about .body{
+    margin-top: 3rem;
+}
+.about .body .block{
+    border: 1px solid #333;
+    background-color: #333;
+    border-radius: 3px;
+    padding: 15px;
+    transition: .5s all;
+    margin-bottom: 20px;
+}
+.about .block .icon {
+    position: relative;
+    width: 160px;
+    height: 92px;
+    background-color: transparent;
+    margin: 46px auto 60px;
+    padding: 20px 0 0 40px;
+    border-left: 2px solid rgba(236, 239, 241, 0.07);
+    border-right: 2px solid rgba(236, 239, 241, 0.07);
+    font-size: 50px;
+    
+}
+.about .block .icon i{
+    color: #777;
+    
+}
+.about .block .icon:before {
+    top: -56.5px;
+    border-top: 2px solid rgba(236, 239, 241, 0.07);
+    border-right: 2px solid rgba(236, 239, 241, 0.07);
+}
+.about .block .icon:after {
+    bottom: -56.5px;
+    border-bottom: 2px solid rgba(236, 239, 241, 0.07);
+    border-left: 2px solid rgba(236, 239, 241, 0.07);
+}
+.about .block .icon:after, .about .block .icon:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 113.14px;
+    height: 113.14px;
+    background-color: inherit;
+    left: 20.4315px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+}
+.about .block .desc h3{
+    color: #afbac4;
+    font-weight: 400;
+    
+}
+.about .block .desc p{
+    color: #777;
+    font-size: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+.about .block:hover{
+    border-bottom: 2px solid #57cbcc;
+}
+.about_desc{
+    background: #242930;
+}
+.about_desc .agency{
+    padding: 40px;
+}
+.about_desc .agency h3{
+    color: #afbac4;
+    font-weight: 400;
+    font-size: 30px;
+}
+.about_desc .agency p{
+    color: #737f8a;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+.about_desc  .icon{
+    float: left !important;
+    padding-right: 15px;
+}
+.about_desc  .icon i{
+    font-size: 30px;
+    color: #57cbcc;
+}
+.about_desc .desc h4{
+    color: #afbac4;
+    font-weight: 400;
+    font-size: 30px;
+}
+.about_desc .desc p{
+    color: #737f8a;
+    font-size: 15px;
+}
+.about_project{
+    background-image:url(../images/backgrounds/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50rem;
+    position: relative;
+}
+ .about_project .contant {
+    margin: auto;
+    margin-top: 20rem;
+}
+.about_project .contant h3{
+    color: #444;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 5rem;
+}
+.about_project .contant p{
+    color: #666;
+    font-size: 15px;
+}
+.about_project .contant .btn{
+    border: 2px solid #57cbcc;
+    padding: 14px 50px;
+    color: #fff;
+    background-color:#57cbcc;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.about_project .contant .btn:hover{
+    background-color:#2c9091;
+    border: 2px solid transparent;
+}
+/**************************************************************/
+.services{
+    background-color: #353b43;
+        
+}
+.services .head h2{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+}
+.services .head  h2 span {
+    color: #57cbcc;
+}
+.services .head .border {
+    border-top: 2px solid rgba(236, 239, 241, 0.07);
+    height: 1px;
+    margin: 15px auto 0;
+    position: relative;
+    width: 30%;
+}
+.services .head .border:before {
+    content: '';
+    height: 6px;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    top: -4px;
+    width: 50px;
+    background-color: #57cbcc;
+}
+.services .body{
+    margin-top: 3rem;
+}
+.services .body .block{
+    border: 1px solid #333;
+    background-color: #333;
+    border-radius: 3px;
+    padding: 15px;
+    transition: .5s all;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+}
+.services .block .icon {
+    position: relative;
+    background-color: transparent;
+    font-size: 30px;
+    
+}
+.services .block .icon i{
+    color: #777;
+    
+}
+.services .block  h3{
+    color: #afbac4;
+    font-weight: 400;
+    
+}
+.services .block  p{
+    color: #737f8a;
+    font-size: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+.skill{
+    background-color: #333;
+    padding-bottom: 7rem;
+}
+.skill .head{
+    margin-bottom: 3rem;
+}
+.skill .head h2{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+}
+.skill .head  h2 span {
+    color: #57cbcc;
+}
+.skill .head .border {
+    border-top: 2px solid rgba(236, 239, 241, 0.07);
+    height: 1px;
+    margin: 15px auto 0;
+    position: relative;
+    width: 30%;
+}
+.skill .head .border:before {
+    content: '';
+    height: 6px;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    top: -4px;
+    width: 50px;
+    background-color: #57cbcc;
+}
+.skill  h3{
+    color: #afbac4;
+    font-weight: 400;
+    
+}
+.skill .desc  p{
+    color: #737f8a;
+    font-size: 15px;
+    margin: 0 auto;
+}
+.w3-grey{
+    height:7px;
+    background-color:#57cbcc;
+}
+.one{
+    width: 72%;
+}
+.tow{
+    width: 55%;
+    
+}
+.three{
+    width: 45%;
+}
+.four{
+    width: 80%;
+}
+/*******************************************************/
+.protifilo{
+    background-image:url(../images/backgrounds/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50rem;
+    position: relative;
+}
+.protifilo .contant {
+    margin: auto;
+    margin-top: 20rem;
+}
+.protifilo .contant .block{
+    border: 1px solid #333;
+    background-color: #333;
+    border-radius: 3px;
+    padding: 15px;
+    transition: .5s all;
+}
+.protifilo .block .icon {
+    position: relative;
+    background-color: transparent;
+    font-size: 30px;
+    
+}
+.protifilo .block  i{
+    color: #777;
+    font-size: 25px;
+    
+}
+.protifilo .block  h3{
+    color: #afbac4;
+    font-weight: 400;
+    
+}
+.protifilo .block  p{
+    color: #737f8a;
+    font-size: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
